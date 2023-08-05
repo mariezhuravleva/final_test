@@ -15,13 +15,13 @@ string[] FilterArray(string[] array)
     }
 
     string[] filteredArray = new string[newSize];
-    int currentIndex = 0;
+    int newIndex = 0;
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= 3)
         {
-            filteredArray[currentIndex] = array[i];
-            currentIndex++;
+            filteredArray[newIndex] = array[i];
+            newIndex++;
         }
     }
     return filteredArray;
